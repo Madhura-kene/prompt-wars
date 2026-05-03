@@ -134,10 +134,3 @@ Then update `qa.js` to call `/api/chat` instead of the Anthropic API directly.
 
 ---
 
-## 📄 License
-
-MIT License. Educational use only. Not affiliated with any political party or government body.
-
----
-
-*Built with ElectIQ — Making Democracy Understandable*
