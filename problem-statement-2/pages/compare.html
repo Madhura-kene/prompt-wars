@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Compare Countries — ElectIQ</title>
+  <link rel="stylesheet" href="../css/main.css"/>
+  <link rel="stylesheet" href="../css/compare.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="nav">
+    <a href="../index.html" class="nav-logo">Elect<span>IQ</span></a>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="journey.html">Journey</a></li>
+      <li><a href="compare.html" class="active">Compare</a></li>
+      <li><a href="simulator.html">Simulator</a></li>
+      <li><a href="qa.html">Q&amp;A</a></li>
+    </ul>
+    <div class="nav-hamburger" id="hamburger">&#9776;</div>
+  </nav>
+
+  <div class="page-header">
+    <div class="badge">Country Comparator</div>
+    <h1>How Do <span class="accent">Nations Vote?</span></h1>
+    <p>Choose two countries and compare their election systems across 8 key dimensions — from how votes are cast to how winners are determined.</p>
+  </div>
+
+  <!-- SELECTOR -->
+  <div class="compare-selector-wrap">
+    <div class="compare-selector">
+      <div class="country-pick">
+        <label>Country A</label>
+        <select id="countryA" onchange="renderComparison()">
+          <!-- Injected by JS -->
+        </select>
+      </div>
+      <div class="vs-badge">VS</div>
+      <div class="country-pick">
+        <label>Country B</label>
+        <select id="countryB" onchange="renderComparison()">
+          <!-- Injected by JS -->
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <!-- COMPARISON TABLE -->
+  <div class="compare-main" id="compareMain">
+    <!-- Injected by JS -->
+  </div>
+
+  <!-- RADAR CHART -->
+  <div class="radar-wrap">
+    <h2 class="section-title" style="text-align:center;margin-bottom:2rem;">Democracy Index Snapshot</h2>
+    <div class="radar-container">
+      <canvas id="radarChart" width="400" height="400"></canvas>
+      <div class="radar-legend" id="radarLegend"></div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-logo">Elect<span>IQ</span></div>
+    <p>A non-partisan educational tool.</p>
+    <div class="footer-links">
+      <a href="../index.html">Home</a>
+      <a href="journey.html">Journey</a>
+      <a href="simulator.html">Simulator</a>
+      <a href="qa.html">Q&amp;A</a>
+    </div>
+  </footer>
+
+  <script src="../js/compare.js"></script>
+</body>
+</html>
