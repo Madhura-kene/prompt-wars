@@ -3,10 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>ElectIQ — Understand Democracy</title>
+  <title>ElectIQ — Master Democracy Through Interaction</title>
+  <meta name="description" content="Explore the full journey of an election with ElectIQ. Interactive visuals, country comparisons, and AI-powered guides to understand democracy.">
   <link rel="stylesheet" href="css/main.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -23,79 +24,101 @@
     <div class="nav-hamburger" id="hamburger">&#9776;</div>
   </nav>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-bg">
-      <div class="circle c1"></div>
-      <div class="circle c2"></div>
-      <div class="circle c3"></div>
-      <div class="grid-overlay"></div>
-    </div>
-    <div class="hero-content">
-      <div class="hero-badge">Democracy Explained</div>
-      <h1 class="hero-title">How Does an<br/><span class="accent">Election</span><br/>Really Work?</h1>
-      <p class="hero-sub">Explore the full journey of an election — from voter registration to final certification — with interactive visuals, country comparisons, and an AI guide.</p>
-      <div class="hero-cta">
-        <a href="pages/journey.html" class="btn-primary">Start the Journey</a>
-        <a href="pages/simulator.html" class="btn-ghost">Try the Simulator</a>
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-bg">
+        <div class="circle c1"></div>
+        <div class="circle c2"></div>
+        <div class="circle c3"></div>
+        <div class="grid-overlay"></div>
       </div>
-    </div>
-    <div class="hero-cards">
-      <a href="pages/journey.html" class="feature-card" style="--delay:0.1s">
-        <div class="card-icon">🗺️</div>
-        <h3>Visual Journey</h3>
-        <p>Follow a ballot from registration to result in an animated step-by-step map.</p>
-        <span class="card-arrow">→</span>
-      </a>
-      <a href="pages/compare.html" class="feature-card" style="--delay:0.2s">
-        <div class="card-icon">🌍</div>
-        <h3>Country Compare</h3>
-        <p>Side-by-side breakdown of election systems across the globe.</p>
-        <span class="card-arrow">→</span>
-      </a>
-      <a href="pages/simulator.html" class="feature-card" style="--delay:0.3s">
-        <div class="card-icon">🎮</div>
-        <h3>Role-Play Simulator</h3>
-        <p>Step into the shoes of an election official and run a real election.</p>
-        <span class="card-arrow">→</span>
-      </a>
-      <a href="pages/qa.html" class="feature-card" style="--delay:0.4s">
-        <div class="card-icon">🤖</div>
-        <h3>AI Q&amp;A Guide</h3>
-        <p>Ask any election question and get a clear, non-partisan answer instantly.</p>
-        <span class="card-arrow">→</span>
-      </a>
-    </div>
-  </section>
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          Democracy Reimagined
+        </div>
+        <h1 class="hero-title">How Does an<br/><span class="accent">Election</span><br/>Really Work?</h1>
+        <p class="hero-sub">Step into the mechanics of democracy. From registration to certification, explore every stage through interactive simulations, data-driven comparisons, and AI insight.</p>
+        <div class="hero-cta">
+          <a href="pages/journey.html" class="btn-primary">Start the Journey</a>
+          <a href="pages/simulator.html" class="btn-ghost">Try the Simulator</a>
+        </div>
+      </div>
+      <div class="hero-cards">
+        <a href="pages/journey.html" class="feature-card" style="--delay:0.1s">
+          <div class="card-icon">🗺️</div>
+          <h3>Visual Journey</h3>
+          <p>An animated, step-by-step breakdown of the ballot's path from hand to box to count.</p>
+          <span class="card-arrow">→</span>
+        </a>
+        <a href="pages/compare.html" class="feature-card" style="--delay:0.2s">
+          <div class="card-icon">🌍</div>
+          <h3>Country Compare</h3>
+          <p>Contrast electoral systems across 10 global nations using immersive radar analytics.</p>
+          <span class="card-arrow">→</span>
+        </a>
+        <a href="pages/simulator.html" class="feature-card" style="--delay:0.3s">
+          <div class="card-icon">🎮</div>
+          <h3>Election Simulator</h3>
+          <p>Take command as an election official. Handle crises and protect the integrity of the vote.</p>
+          <span class="card-arrow">→</span>
+        </a>
+        <a href="pages/qa.html" class="feature-card" style="--delay:0.4s">
+          <div class="card-icon">🤖</div>
+          <h3>AI Election Guide</h3>
+          <p>Get instant, non-partisan answers to complex voting questions powered by advanced AI.</p>
+          <span class="card-arrow">→</span>
+        </a>
+      </div>
+    </section>
 
-  <!-- STATS STRIP -->
-  <section class="stats-strip">
-    <div class="stat"><span class="stat-num" data-target="195">0</span><span class="stat-label">Countries Compared</span></div>
-    <div class="stat"><span class="stat-num" data-target="8">0</span><span class="stat-label">Election Stages</span></div>
-    <div class="stat"><span class="stat-num" data-target="12">0</span><span class="stat-label">Simulator Scenarios</span></div>
-    <div class="stat"><span class="stat-num" data-target="100">0</span><span class="stat-label">% Non-Partisan</span></div>
-  </section>
+    <!-- STATS STRIP -->
+    <section class="stats-strip">
+      <div class="stat"><span class="stat-num" data-target="195">0</span><span class="stat-label">Countries Analyzed</span></div>
+      <div class="stat"><span class="stat-num" data-target="8">0</span><span class="stat-label">Journey Stages</span></div>
+      <div class="stat"><span class="stat-num" data-target="12">0</span><span class="stat-label">Crisis Scenarios</span></div>
+      <div class="stat"><span class="stat-num" data-target="100">0</span><span class="stat-label">% Objective Data</span></div>
+    </section>
 
-  <!-- HOW IT WORKS STRIP -->
-  <section class="how-section">
-    <h2 class="section-title">Four Ways to Learn</h2>
-    <div class="how-grid">
-      <div class="how-step"><div class="step-num">01</div><h4>Explore the Journey</h4><p>Animated timeline walks you through every stage of an election — from candidate filing to certification.</p></div>
-      <div class="how-step"><div class="step-num">02</div><h4>Compare Nations</h4><p>Pick any two countries and see how their electoral systems differ across 8 key dimensions.</p></div>
-      <div class="how-step"><div class="step-num">03</div><h4>Run an Election</h4><p>Make real decisions as an election official. Handle crises, recount ballots, and certify results.</p></div>
-      <div class="how-step"><div class="step-num">04</div><h4>Ask Anything</h4><p>Powered by Claude AI. Ask plain-English questions about any election topic in any country.</p></div>
-    </div>
-  </section>
+    <!-- HOW IT WORKS STRIP -->
+    <section class="how-section">
+      <h2 class="section-title">Explore Your <span class="accent">Democracy</span></h2>
+      <div class="how-grid">
+        <div class="how-step">
+          <div class="step-num">01</div>
+          <h4>The Visual Path</h4>
+          <p>Follow a ballot through its entire lifecycle with high-fidelity animations and detailed explainers.</p>
+        </div>
+        <div class="how-step">
+          <div class="step-num">02</div>
+          <h4>Global Context</h4>
+          <p>Compare voting methods and democratic health indices across the world's most complex systems.</p>
+        </div>
+        <div class="how-step">
+          <div class="step-num">03</div>
+          <h4>Role-Play Action</h4>
+          <p>Navigate 8 high-stakes scenarios where your decisions impact public trust and legal compliance.</p>
+        </div>
+        <div class="how-step">
+          <div class="step-num">04</div>
+          <h4>Real-Time Insight</h4>
+          <p>Leverage Claude AI for deep-dives into any constitutional or procedural election topic.</p>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <footer class="footer">
     <div class="footer-logo">Elect<span>IQ</span></div>
-    <p>A non-partisan educational tool. Not affiliated with any political party or government body.</p>
+    <p>A non-partisan educational initiative. Empowering citizens through clarity and data.</p>
     <div class="footer-links">
       <a href="pages/journey.html">Journey</a>
       <a href="pages/compare.html">Compare</a>
       <a href="pages/simulator.html">Simulator</a>
       <a href="pages/qa.html">Q&amp;A</a>
     </div>
+    <p style="margin-top: 2rem; font-size: 0.7rem; opacity: 0.3;">&copy; 2026 ElectIQ Project. Built for Excellence.</p>
   </footer>
 
   <script src="js/main.js"></script>
